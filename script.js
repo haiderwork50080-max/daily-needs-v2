@@ -53,3 +53,17 @@ setInterval(() => {
   }
   document.getElementById("banner").src = banners[currentBanner];
 }, 3000);
+function searchProduct() {
+  let input = document.getElementById("search").value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    let name = card.querySelector("h3").innerText.toLowerCase();
+
+    if (name.includes(input)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
