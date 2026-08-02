@@ -25,6 +25,37 @@
 <button onclick="checkout()">Proceed to Checkout</button>
 
 </div>
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let output = "";
+
+let total = 0;
+
+cart.forEach(item=>{
+
+output += "<p>"+item.name+"</p>";
+
+total += item.price;
+
+});
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+document.getElementById("cart-items").innerHTML=output;
+
+document.getElementById("total").innerHTML="Total : ₹"+total;
+
+});
+
+function checkout(){
+
+window.open("https://wa.me/917820041833?text=I want to order from Daily Needs","_blank");
+
+}
+
+</script>
 
 <script src="script.js"></script>
 
