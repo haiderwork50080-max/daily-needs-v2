@@ -94,7 +94,7 @@ localStorage.setItem("cart", JSON.stringify(cart));
 alert(productName + " Added Successfully!");
 
 }
-function placeOrder()let payment = document.querySelector('input[name="payment"]:checked').value;
+function placeOrder(window.location.href = "success.html";)let payment = document.querySelector('input[name="payment"]:checked').value;
 
 order += "%0A💳 Payment: " + payment + "%0A";{
 
