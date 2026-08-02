@@ -154,3 +154,27 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+.offer-banner{
+background:#ff9800;
+color:white;
+text-align:center;
+padding:12px;
+font-weight:bold;
+font-size:16px;
+}
+
+.search-box{
+padding:20px;
+background:#fff;
+text-align:center;
+}
+
+.search-box input{
+width:90%;
+max-width:500px;
+padding:15px;
+border:2px solid #0f9d58;
+border-radius:30px;
+font-size:17px;
+outline:none;
+}
