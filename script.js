@@ -83,6 +83,7 @@ cart.push({
 name: productName,
 price: price
 });
+<button onclick="removeItem(${index})">🗑 Remove</button>
 
 cartCount++;
 
