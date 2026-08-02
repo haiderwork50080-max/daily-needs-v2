@@ -119,7 +119,7 @@ cart.forEach(item=>{
 
 order+="• "+item.name+" - ₹"+item.price+"%0A";
 
-});
+})
 
 window.open("https://wa.me/917820041833?text="+order,"_blank");
 
