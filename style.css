@@ -226,3 +226,17 @@ to{opacity:1;}
   border-radius:10px;
   font-size:16px;
 }
+input, textarea{
+width:90%;
+max-width:500px;
+padding:12px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+textarea{
+height:100px;
+resize:none;
+}
