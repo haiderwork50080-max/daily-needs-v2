@@ -38,3 +38,18 @@ slides[slideIndex-1].style.display="block";
 setTimeout(showSlides,3000);
 
 }
+const banners = [
+  "images/banner1.jpg",
+  "images/banner2.jpg",
+  "images/banner3.jpg"
+];
+
+let currentBanner = 0;
+
+setInterval(() => {
+  currentBanner++;
+  if (currentBanner >= banners.length) {
+    currentBanner = 0;
+  }
+  document.getElementById("banner").src = banners[currentBanner];
+}, 3000);
