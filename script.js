@@ -125,3 +125,12 @@ order+="• "+item.name+" - ₹"+item.price+"%0A";
 window.open("https://wa.me/917820041833?text="+order,"_blank");
 
 }
+function removeItem(index){
+
+cart.splice(index,1);
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+loadCart();
+
+}
