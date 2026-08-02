@@ -134,3 +134,21 @@ localStorage.setItem("cart",JSON.stringify(cart));
 loadCart();
 
 }
+let adminProducts = JSON.parse(localStorage.getItem("adminProducts")) || [];
+
+function addProduct(){
+
+let name = document.getElementById("productName").value;
+
+let price = document.getElementById("productPrice").value;
+
+adminProducts.push({
+name:name,
+price:price
+});
+
+localStorage.setItem("adminProducts",JSON.stringify(adminProducts));
+
+alert("Product Added Successfully!");
+
+}
