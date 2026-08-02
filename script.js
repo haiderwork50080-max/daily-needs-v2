@@ -93,3 +93,32 @@ localStorage.setItem("cart", JSON.stringify(cart));
 alert(productName + " Added Successfully!");
 
 }
+function placeOrder(){
+
+let name=document.getElementById("name").value;
+
+let phone=document.getElementById("phone").value;
+
+let address=document.getElementById("address").value;
+
+let cart=JSON.parse(localStorage.getItem("cart"))||[];
+
+let order="🛒 *New Order*%0A%0A";
+
+order+="👤 Name: "+name+"%0A";
+
+order+="📞 Phone: "+phone+"%0A";
+
+order+="📍 Address: "+address+"%0A%0A";
+
+order+="📦 Products:%0A";
+
+cart.forEach(item=>{
+
+order+="• "+item.name+" - ₹"+item.price+"%0A";
+
+});
+
+window.open("https://wa.me/917820041833?text="+order,"_blank");
+
+}
