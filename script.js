@@ -75,3 +75,21 @@ function addToCart(productName) {
 
   alert(productName + " added to cart!");
 }
+let cart = [];
+
+function addToCart(productName, price = 0) {
+
+cart.push({
+name: productName,
+price: price
+});
+
+cartCount++;
+
+document.getElementById("cart-count").innerText = cartCount;
+
+localStorage.setItem("cart", JSON.stringify(cart));
+
+alert(productName + " Added Successfully!");
+
+}
